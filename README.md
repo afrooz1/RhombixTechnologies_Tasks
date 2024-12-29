@@ -116,4 +116,3 @@ Feel free to fork this repository and submit pull requests.
 This project is licensed under the MIT License.
 ```
 
-Feel free to customize these README files with more specific details about your projects, such as screenshots, additional setup instructions, or any other relevant information.
