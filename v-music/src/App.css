@@ -1,0 +1,238 @@
+/* Global styles */
+body {
+  background-color: #121212; /* Dark background for futuristic look */
+  color: #f0f0f0; /* Light text for high contrast */
+  font-family: "Roboto", sans-serif; /* Clean and modern font */
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* App Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #1db954, #121212); /* Spotify green with a dark gradient */
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #1db954; /* Green highlight */
+}
+
+.navbar-brand {
+  color: #030303 !important; /* Spotify green */
+  font-weight: bold;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #535554 !important; /* Slightly darker green on hover */
+}
+
+/* Search Bar */
+.navbar input {
+  background: #1e1e1e; /* Dark gray background */
+  color: #ffffff; /* White text for visibility */
+  border: 2px solid #1db954; /* Green border for accent */
+  padding: 10px 20px;
+  border-radius: 50px; /* Fully rounded edges */
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+}
+
+.navbar input::placeholder {
+  color: #888888; /* Subtle gray placeholder */
+}
+
+.navbar input:focus {
+  outline: none;
+  background: #2a2a2a; /* Slightly lighter gray on focus */
+  color: #ffffff; /* Ensure text is white when focused */
+  box-shadow: 0px 0px 8px rgba(29, 185, 84, 0.8); /* Green glow effect */
+}
+
+/* Search Button */
+.navbar .btn-outline-success {
+  background: linear-gradient(90deg, #1db954, #1a9a44); /* Gradient */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Fully rounded */
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .btn-outline-success:hover {
+  background: linear-gradient(90deg, #1a9a44, #1db954); /* Reverse gradient */
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+}
+
+/* Modal Buttons */
+.navbar .btn-secondary {
+  background: #444444;
+  color: #ffffff;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .btn-secondary:hover {
+  background: #555555; /* Lighter gray on hover */
+  transform: scale(1.05); /* Slight size increase */
+}
+
+/* Cards */
+/* Music Card Styles */
+.music-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-image img {
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-image img:hover {
+  opacity: 0.9;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+}
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container h3 {
+  color: #6c757d;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #ff4b2b, #ff416c);
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container h3 {
+  color: #6c757d;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
+
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #1db954, 0 0 20px #1db954, 0 0 30px #1db954;
+  }
+  100% {
+    text-shadow: 0 0 20px #1db954, 0 0 30px #1db954, 0 0 40px #1db954;
+  }
+}
+
+/* Buttons */
+button {
+  background: #1db954;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #13a045; /* Slightly darker green */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background: #444;
+  cursor: not-allowed;
+} 
+
+/* Keyframes for App Logo Spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
